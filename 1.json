@@ -1,19 +1,16 @@
 // 订阅使用 JSON5 语法, 根节点可以是数组也可以是对象
 {
-  id: 'com.xiachufang',
-  name: '下厨房',
+  id: 'com.jd.jxj',
+  name: '京粉',
   groups: [
     {
       key: 1,
-      name: '首页-文档列表广告',
-      activityIds: ['com.xiachufang.startpage.ui.StartPageActivity', 'com.android.launcher.Launcher'],
+      name: '首页',
+      activityIds: ['com.jd.jxj.modules.main.SlidingTabActivity'],
       rules: [
         {
-          matches: '[text="跳过 "]'+'[text="跳过"]',,
-          snapshotUrls: [
-              'https://i.gkd.li/snapshot/1700754341939',
-              'https://i.gkd.li/snapshot/1700755749921',
-            ],
+          matches: '[id="com.jd.jxj:id/btn_skip"]',
+          snapshotUrls: 'https://i.gkd.li/import/13452692',
         },
       ],
     },
