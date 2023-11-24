@@ -1,0 +1,49 @@
+{
+    "id": 1,
+    "name": "本地规则1",
+    "version": 177,
+    "author": "crty",
+    "apps": [
+        {
+            "id": "com.xiachufang",
+            "name": "下厨房",
+            "groups": [
+                {
+                    "key": 1,
+                    "name": "首页",
+                    "matchTime": 10000,
+                    "actionMaximum": 1,
+                    "activityIds": ["com.xiachufang.startpage.ui.StartPageActivity","com.android.launcher.Launcher"],
+                    "resetMatch": "app",
+                    "quickFind": true,
+                    "rules": [
+                        {
+                            "matches": "[text=\"跳过 \"] + [text=\"跳过\"]",
+                            "snapshotUrls": [
+                                "https://i.gkd.li/snapshot/1700754341939",
+                                "https://i.gkd.li/snapshot/1700755749921"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "com.jd.jxj",
+            "name": "京粉",
+            "groups": [
+                {
+                    "key": 0,
+                    "name": "开屏广告",
+                    "quickFind": true,
+                    "matchTime": 10000,
+                    "actionMaximum": 1,
+                    "resetMatch": "app",
+                    "activityIds":["com.jd.jxj.modules.main.SlidingTabActivity"],
+                    "rules": "[id=\"com.jd.jxj:id/btn_skip\"]",
+                    "snapshotUrls": "https://i.gkd.li/import/13452692"
+                }
+            ]
+        }
+    ]
+}
